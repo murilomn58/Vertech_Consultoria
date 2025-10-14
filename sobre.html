@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Vértice Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .team-section { padding: 60px 0; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 60px; margin-top: 60px; }
+        .team-member { background: var(--bg-light); padding: 40px; border-radius: 20px; border: 2px solid #e2e8f0; transition: all 0.3s; }
+        .team-member:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(59, 130, 246, 0.15); }
+        .team-header { display: flex; align-items: center; gap: 25px; margin-bottom: 30px; }
+        .team-photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary); }
+        .team-info h3 { font-size: 28px; color: var(--primary-dark); margin-bottom: 5px; }
+        .team-role { color: var(--primary); font-weight: 700; font-size: 18px; margin-bottom: 10px; }
+        .linkedin-link { display: inline-flex; align-items: center; gap: 5px; color: #0077b5; text-decoration: none; font-weight: 600; transition: opacity 0.3s; }
+        .linkedin-link:hover { opacity: 0.7; }
+        .team-bio { color: var(--text); line-height: 1.8; margin-bottom: 25px; }
+        .team-highlights { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .team-highlights h4 { font-size: 16px; color: var(--primary-dark); margin-bottom: 15px; font-weight: 700; }
+        .team-highlights ul { list-style: none; }
+        .team-highlights li { padding: 8px 0 8px 25px; position: relative; color: var(--text-light); line-height: 1.6; }
+        .team-highlights li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 900; }
+        .hackathon-badge { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 30px; border-radius: 15px; text-align: center; margin: 60px 0; border: 2px solid var(--primary); }
+        .hackathon-badge h3 { font-size: 32px; color: var(--primary-dark); margin-bottom: 15px; }
+        .hackathon-badge p { font-size: 18px; color: var(--text-light); }
+        .mission-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px; }
+        .mission-card { background: var(--bg-light); padding: 40px; border-radius: 15px; text-align: center; border: 2px solid #e2e8f0; }
+        .mission-icon { font-size: 48px; margin-bottom: 20px; }
+        .mission-card h3 { font-size: 24px; color: var(--primary-dark); margin-bottom: 15px; }
+        @media (max-width: 768px) { .team-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="logo.svg" alt="Vértice">VÉRTICE</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="casos.html">Casos</a></li>
+                <li><a href="sobre.html" class="active">Sobre</a></li>
+                <li><a href="contato.html" class="cta-button">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h1>Quem Somos</h1>
+            <p class="subtitle">Engenheiros do IME unindo visão estratégica e expertise técnica para transformar PMEs brasileiras</p>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <h2>Nosso Time</h2>
+        <p class="section-subtitle">Fundadores com formação de excelência e experiência comprovada em inovação</p>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-header">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%233b82f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='48' font-weight='bold' font-family='system-ui'%3EM%3C/text%3E%3C/svg%3E" alt="Murilo Miguel Narciso" class="team-photo">
+                    <div class="team-info">
+                        <h3>Murilo Miguel Narciso</h3>
+                        <div class="team-role">CEO & Co-fundador</div>
+                        <a href="https://www.linkedin.com/in/murilonarciso/" target="_blank" class="linkedin-link">🔗 LinkedIn</a>
+                    </div>
+                </div>
+                <p class="team-bio">Engenheiro Civil em formação pelo Instituto Militar de Engenharia (IME), com forte base em pensamento estratégico desenvolvido no ambiente militar. Atua na interface entre engenharia, pesquisa aplicada e inovação tecnológica com foco em soluções sustentáveis.</p>
+                <div class="team-highlights">
+                    <h4>🎓 Formação & Experiência</h4>
+                    <ul>
+                        <li>Bacharelado em Engenharia de Fortificação e Construção - IME</li>
+                        <li>3 anos em Pesquisa & Desenvolvimento (P&D) - CNPq</li>
+                        <li>Pesquisa em materiais sustentáveis a partir de resíduos industriais</li>
+                        <li>Consultor e vendas técnicas na IME Júnior</li>
+                    </ul>
+                </div>
+                <div class="team-highlights">
+                    <h4>💡 Especialidades</h4>
+                    <ul>
+                        <li>Visão estratégica de negócios</li>
+                        <li>Gestão de projetos complexos</li>
+                        <li>Inovação e economia circular</li>
+                        <li>Liderança e formação de equipes</li>
+                    </ul>
+                </div>
+                <div class="team-highlights">
+                    <h4>🏆 Conquistas</h4>
+                    <ul>
+                        <li>Vencedor Hackathon IA 2025 (COPPE/UFRJ)</li>
+                        <li>Apresentações na ABM Week 2025</li>
+                        <li>Publicações científicas em materiais sustentáveis</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-header">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%231e40af'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='48' font-weight='bold' font-family='system-ui'%3EJ%3C/text%3E%3C/svg%3E" alt="Jean Kairo Crispim" class="team-photo">
+                    <div class="team-info">
+                        <h3>Jean Kairo Crispim</h3>
+                        <div class="team-role">CTO & Co-fundador</div>
+                        <a href="https://www.linkedin.com/in/jean-kairo-crispim-a11312284/" target="_blank" class="linkedin-link">🔗 LinkedIn</a>
+                    </div>
+                </div>
+                <p class="team-bio">Engenheiro de Telecomunicações em formação pelo Instituto Militar de Engenharia (IME) com intercâmbio acadêmico na USMA (West Point). Especialista em IA aplicada, desenvolvimento web, redes de computadores e cibersegurança.</p>
+                <div class="team-highlights">
+                    <h4>🎓 Formação & Experiência</h4>
+                    <ul>
+                        <li>5º ano de Engenharia de Telecomunicações - IME</li>
+                        <li>Cybersecurity and Computer Science - West Point (EUA)</li>
+                        <li>Pesquisador CNPq - Redes Móveis Ad-Hoc</li>
+                        <li>Desenvolvedor Full-Stack na IME Júnior</li>
+                        <li>Coordenador do Batalhão de Computação</li>
+                    </ul>
+                </div>
+                <div class="team-highlights">
+                    <h4>💡 Especialidades</h4>
+                    <ul>
+                        <li>Agentes de IA e RAG</li>
+                        <li>Redes definidas por software (SD-WAN)</li>
+                        <li>Automação com Python e LangChain</li>
+                        <li>Desenvolvimento web (React, Firebase)</li>
+                        <li>Webscraping inteligente</li>
+                    </ul>
+                </div>
+                <div class="team-highlights">
+                    <h4>🏆 Conquistas & Certificações</h4>
+                    <ul>
+                        <li>Vencedor Hackathon IA 2025 (COPPE/UFRJ)</li>
+                        <li>Certificação CCNA 1 (Cisco)</li>
+                        <li>Introduction to BGP (APNIC)</li>
+                        <li>Agente de IA para RH com triagem inteligente</li>
+                        <li>Automação de redes SD-WAN</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="hackathon-badge">
+            <h3>🏆 Vencedores do 1º Hackathon de IA 2025</h3>
+            <p>Superamos mais de 50 equipes com a "Susy", uma assistente inteligente baseada em LLMs que acompanha pacientes desde o pré-operatório até o dia da cirurgia. Evento organizado pela Incubadora de Empresas COPPE/UFRJ em parceria com AWS e Visagio.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Nossa Missão</h2>
+        <p class="section-subtitle">Democratizar o acesso à tecnologia de ponta para PMEs brasileiras</p>
+        <div class="mission-grid">
+            <div class="mission-card">
+                <div class="mission-icon">🎯</div>
+                <h3>Visão</h3>
+                <p>Ser referência em transformação digital para PMEs até 2027, impactando +500 empresas</p>
+            </div>
+            <div class="mission-card">
+                <div class="mission-icon">💡</div>
+                <h3>Missão</h3>
+                <p>Automatizar processos críticos com IA, liberando empreendedores para focar em estratégia</p>
+            </div>
+            <div class="mission-card">
+                <div class="mission-icon">❤️</div>
+                <h3>Valores</h3>
+                <p>Excelência técnica, personalização, transparência e impacto real no negócio do cliente</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div class="footer-logo">VÉRTICE CONSULTORIA</div>
+            <p style="opacity: 0.9; margin-bottom: 30px;">Onde estratégia encontra automação</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="solucoes.html">Soluções</a>
+                <a href="casos.html">Casos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="copyright">© 2025 Vértice Consultoria. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+</body>
+</html>
