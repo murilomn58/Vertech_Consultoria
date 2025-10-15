@@ -51,7 +51,7 @@
                 Mensagem enviada com sucesso! Entraremos em contato em breve.
             </div>
             <div class="error-message" id="errorMessage">
-                Nao foi possivel enviar sua mensagem. Tente novamente em instantes ou fale conosco pelo WhatsApp.
+                N&atilde;o foi poss&iacute;vel enviar sua mensagem. Tente novamente em instantes ou fale conosco pelo WhatsApp.
             </div>
 
             <div class="contact-info">
@@ -161,11 +161,11 @@
             const submitButton = form.querySelector('button[type=\"submit\"]');
             const endpoint = 'https://formsubmit.co/ajax/murilomn58@gmail.com';
             const faturamentoLabels = {
-                ate50k: 'Ate R$ 50 mil',
+                ate50k: 'At\u00e9 R$ 50 mil',
                 '50k-100k': 'R$ 50 mil - R$ 100 mil',
                 '100k-500k': 'R$ 100 mil - R$ 500 mil',
-                '500k-1m': 'R$ 500 mil - R$ 1 milhao',
-                acima1m: 'Acima de R$ 1 milhao'
+                '500k-1m': 'R$ 500 mil - R$ 1 milh\u00e3o',
+                acima1m: 'Acima de R$ 1 milh\u00e3o'
             };
 
             successMsg.style.display = 'none';
@@ -174,25 +174,20 @@
             submitButton.textContent = 'Enviando...';
 
             const formEntries = new FormData(form);
-            const payload = {
-                Nome: formEntries.get('nome'),
-                Email: formEntries.get('email'),
-                Telefone: formEntries.get('telefone'),
-                Empresa: formEntries.get('empresa'),
-                Faturamento: faturamentoLabels[formEntries.get('faturamento')] || formEntries.get('faturamento'),
-                Mensagem: formEntries.get('mensagem'),
-                _subject: 'Novo contato Vertech Consultoria',
-                _captcha: 'false'
-            };
+            const faturamentoSelecionado = formEntries.get('faturamento');
+            if (faturamentoSelecionado && faturamentoLabels[faturamentoSelecionado]) {
+                formEntries.set('faturamento', faturamentoLabels[faturamentoSelecionado]);
+            }
+            formEntries.append('_subject', 'Novo contato Vertech Consultoria');
+            formEntries.append('_captcha', 'false');
 
             try {
                 const response = await fetch(endpoint, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
-                    body: JSON.stringify(payload)
+                    body: formEntries
                 });
 
                 if (!response.ok) {

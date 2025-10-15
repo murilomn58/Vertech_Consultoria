@@ -3,47 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós | Vertech Consultoria</title>
+    <title>Sobre | Vertech Consultoria</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .team-section { padding: 60px 0; }
-        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 60px; margin-top: 60px; }
-        .team-member { background: var(--bg-light); padding: 40px; border-radius: 20px; border: 2px solid #e2e8f0; transition: all 0.3s; }
-        .team-member:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(59, 130, 246, 0.15); }
-        .team-header { display: flex; align-items: center; gap: 25px; margin-bottom: 30px; }
-        .team-photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary); }
-        .team-info h3 { font-size: 28px; color: var(--primary-dark); margin-bottom: 5px; }
-        .team-role { color: var(--primary); font-weight: 700; font-size: 18px; margin-bottom: 10px; }
-        .linkedin-link { display: inline-flex; align-items: center; gap: 5px; color: #0077b5; text-decoration: none; font-weight: 600; transition: opacity 0.3s; }
-        .linkedin-link:hover { opacity: 0.7; }
-        .team-bio { color: var(--text); line-height: 1.8; margin-bottom: 25px; }
-        .team-highlights { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
-        .team-highlights h4 { font-size: 16px; color: var(--primary-dark); margin-bottom: 15px; font-weight: 700; }
-        .team-highlights ul { list-style: none; }
-        .team-highlights li { padding: 8px 0 8px 25px; position: relative; color: var(--text-light); line-height: 1.6; }
-        .team-highlights li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 900; }
-        .hackathon-badge { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 30px; border-radius: 15px; text-align: center; margin: 60px 0; border: 2px solid var(--primary); }
-        .hackathon-badge h3 { font-size: 32px; color: var(--primary-dark); margin-bottom: 15px; }
-        .hackathon-badge p { font-size: 18px; color: var(--text-light); }
-        .mission-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px; }
-        .mission-card { background: var(--bg-light); padding: 40px; border-radius: 15px; text-align: center; border: 2px solid #e2e8f0; }
-        .mission-icon { font-size: 48px; margin-bottom: 20px; }
-        .mission-card h3 { font-size: 24px; color: var(--primary-dark); margin-bottom: 15px; }
-        .clients-counter { display: flex; justify-content: center; margin: 60px auto 0; padding: 0 20px; }
-        .clients-card { background: white; border-radius: 18px; border: 2px solid var(--primary); padding: 40px 60px; text-align: center; box-shadow: 0 15px 45px rgba(59, 130, 246, 0.15); max-width: 420px; }
-        .clients-label { font-size: 16px; letter-spacing: 1px; text-transform: uppercase; color: var(--primary-dark); font-weight: 700; margin-bottom: 12px; }
-        .clients-number { font-size: 64px; font-weight: 900; color: var(--primary); line-height: 1; margin-bottom: 12px; }
-        .clients-note { color: var(--text-light); font-size: 18px; }
-        @media (max-width: 768px) { .team-grid { grid-template-columns: 1fr; } }
+        .team-section{padding:60px 0}
+        .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:48px;margin-top:48px}
+        .team-member{background:var(--bg-light);padding:40px;border-radius:18px;border:2px solid #e2e8f0;transition:all .3s}
+        .team-member:hover{border-color:var(--primary);transform:translateY(-6px);box-shadow:0 20px 50px rgba(59,130,246,.15)}
+        .team-header{display:flex;align-items:center;gap:24px;margin-bottom:24px}
+        .team-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--primary)}
+        .team-info h3{font-size:28px;color:var(--primary-dark);margin:0 0 8px}
+        .team-role{color:var(--primary);font-weight:700;font-size:18px;margin-bottom:10px}
+        .linkedin-link{display:inline-flex;align-items:center;gap:8px;color:#0a66c2;text-decoration:none;font-weight:600}
+        .linkedin-link:hover{text-decoration:underline}
+        .team-bio{color:var(--text);line-height:1.8;margin-bottom:22px}
+        .team-highlights{background:white;padding:22px;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0}
+        .team-highlights h4{font-size:16px;color:var(--primary-dark);margin:0 0 12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+        .team-highlights ul{list-style:none;margin:0;padding:0}
+        .team-highlights li{position:relative;padding-left:20px;margin-bottom:10px;color:var(--text-light);line-height:1.6}
+        .team-highlights li::before{content:"\2022";position:absolute;left:0;color:var(--primary);font-weight:900}
+        .hackathon-badge{background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%);padding:32px;border-radius:18px;text-align:center;margin:64px 0;border:2px solid var(--primary)}
+        .hackathon-badge h3{font-size:30px;color:var(--primary-dark);margin-bottom:12px}
+        .hackathon-badge p{color:var(--text-light);font-size:18px;line-height:1.7;max-width:760px;margin:0 auto}
+        .mission-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:48px}
+        .mission-card{background:var(--bg-light);padding:40px;border-radius:16px;text-align:center;border:2px solid #e2e8f0}
+        .mission-icon{font-size:42px;margin-bottom:16px}
+        .mission-card h3{font-size:24px;color:var(--primary-dark);margin-bottom:12px}
+        .clients-counter{display:flex;justify-content:center;margin:60px auto 0;padding:0 20px}
+        .clients-card{background:white;border-radius:18px;border:2px solid var(--primary);padding:36px 56px;text-align:center;box-shadow:0 15px 45px rgba(59,130,246,.15);max-width:420px}
+        .clients-label{text-transform:uppercase;letter-spacing:.08em;color:var(--primary-dark);font-weight:700;font-size:15px;margin-bottom:10px}
+        .clients-number{font-size:60px;font-weight:900;color:var(--primary);line-height:1;margin-bottom:10px}
+        .clients-note{color:var(--text-light);font-size:17px}
+        @media (max-width:768px){
+            .team-grid{grid-template-columns:1fr}
+            .team-header{flex-direction:column;text-align:center}
+            .team-info{text-align:center}
+            .team-member{padding:32px}
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo"><img src="logo.svg" alt="Vertech Consultoria">VERTECH CONSULTORIA</a>
+            <a href="index.html" class="logo"><img src="logo.svg" alt="Vertech Consultoria">Vertech Consultoria</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="solucoes.html">Solu&ccedil;&otilde;es</a></li>
                 <li><a href="casos.html">Casos</a></li>
                 <li><a href="sobre.html" class="active">Sobre</a></li>
                 <li><a href="contato.html" class="cta-button">Contato</a></li>
@@ -52,9 +57,9 @@
     </header>
 
     <section class="hero">
-        <div style="max-width: 900px; margin: 0 auto;">
-            <h1>Quem Somos</h1>
-            <p class="subtitle">Equipe de engenheiros especialistas em IA, unindo estratégia e execução para automatizar processos, otimizar custos e impulsionar crescimento</p>
+        <div style="max-width:900px;margin:0 auto">
+            <h1>Quem somos</h1>
+            <p class="subtitle">Engenharia, pesquisa aplicada e intelig&ecirc;ncia artificial trabalhando juntas para resolver gargalos reais de PMEs brasileiras.</p>
         </div>
     </section>
 
@@ -67,46 +72,41 @@
     </section>
 
     <section class="team-section">
-        <h2>Nosso Time</h2>
-        <p class="section-subtitle">Fundadores com formação de excelência e experiência comprovada em inovação</p>
-        
+        <h2>Nosso time</h2>
+        <p class="section-subtitle">Fundadores com trajet&oacute;ria em pesquisa de ponta, automa&ccedil;&atilde;o de redes e constru&ccedil;&atilde;o de produtos digitais voltados para impacto real.</p>
+
         <div class="team-grid">
             <div class="team-member">
                 <div class="team-header">
                     <img src="fotolinkedinmurilo.jfif" alt="Murilo Miguel Narciso" class="team-photo">
                     <div class="team-info">
                         <h3>Murilo Miguel Narciso</h3>
-                        <div class="team-role">CEO & Co-fundador</div>
-                        <a href="https://www.linkedin.com/in/murilonarciso/" target="_blank" class="linkedin-link">🔗 LinkedIn</a>
+                        <div class="team-role">CEO e cofundador</div>
+                        <a href="https://www.linkedin.com/in/murilonarciso/" target="_blank" rel="noopener" class="linkedin-link">LinkedIn</a>
                     </div>
                 </div>
-                <p class="team-bio">Engenheiro Civil pelo Instituto Militar de Engenharia (IME). Atua na interface entre engenharia, pesquisa aplicada e inovação tecnológica com foco em soluções sustentáveis.</p>
+                <p class="team-bio">Graduando em Engenharia de Fortifica&ccedil;&atilde;o e Constru&ccedil;&atilde;o pelo Instituto Militar de Engenharia (IME). Lidera frentes de pesquisa em materiais sustent&aacute;veis para pavimenta&ccedil;&atilde;o, empreende em dados e IA e acumula vit&oacute;rias em desafios nacionais de inova&ccedil;&atilde;o.</p>
                 <div class="team-highlights">
-                    <h4>🎓 Formação & Experiência</h4>
+                    <h4>Reconhecimentos</h4>
                     <ul>
-                        <li>3 anos em Pesquisa & Desenvolvimento (P&D) - CNPq</li>
-                        <li>Pesquisa em materiais sustentáveis a partir de resíduos industriais</li>
-                        <li>Consultor de vendas na IME Júnior</li>
-                        <li>Atuei como estagiário em soluções de aviação e engenharia - EmbarqueTEC</li>
+                        <li>1&ordm; lugar no Desafio Vale Desenvolver 2025 e no Desafio RDT Transporte UFRJ 2023.</li>
+                        <li>Mais de 6 publica&ccedil;&otilde;es e cap&iacute;tulos em colet&acirc;neas internacionais (Springer, Sustainability, Materials).</li>
+                        <li>Autor do livro <em>Em Busca da Aletheia</em> e premia&ccedil;&otilde;es de destaque acad&ecirc;mico em Santa Catarina.</li>
                     </ul>
                 </div>
                 <div class="team-highlights">
-                    <h4>💡 Especialidades</h4>
+                    <h4>Frentes de atua&ccedil;&atilde;o</h4>
                     <ul>
-                        <li>Visão estratégica de negócios</li>
-                        <li>Análise e tratamento de dados</li>
-                        <li>Inovação e economia circular</li>
-                        <li>Liderança e formação de equipes</li>
-                        <li>Webscraping integrada com IA</li>
+                        <li>Pesquisa aplicada com geopol&iacute;meros, rejeitos de minera&ccedil;&atilde;o e fibras amaz&ocirc;nicas em parceria com IME, UFAM e comunidades locais.</li>
+                        <li>Orienta&ccedil;&atilde;o de inicia&ccedil;&atilde;o cient&iacute;fica em comp&oacute;sitos h&iacute;bridos para aplica&ccedil;&otilde;es bal&iacute;sticas e infraestrutura.</li>
+                        <li>Cofundador da Seal Data, plataforma de certifica&ccedil;&atilde;o e auditoria de dados com intelig&ecirc;ncia artificial.</li>
                     </ul>
                 </div>
                 <div class="team-highlights">
-                    <h4>🏆 Conquistas</h4>
+                    <h4>Idiomas e forma&ccedil;&atilde;o</h4>
                     <ul>
-                        <li>Vencedor Hackathon IA 2025 (COPPE/UFRJ)</li>
-                        <li>1° Lugar no Programa Desenvolver VALE 2025 no tema de Recurso Mineral</li>
-                        <li>1° Lugar no desafio Rio de Transporte(RDT) 2023</li>
-                        <li>Publicações científicas em revistas</li>
+                        <li>Ingl&ecirc;s avan&ccedil;ado e espanhol intermedi&aacute;rio.</li>
+                        <li>Forma&ccedil;&atilde;o t&eacute;cnica em El&eacute;trica (SENAI/SC) e certifica&ccedil;&otilde;es em gest&atilde;o ambiental e regula&ccedil;&atilde;o.</li>
                     </ul>
                 </div>
             </div>
@@ -116,75 +116,69 @@
                     <img src="fotolinkedinjean.jfif" alt="Jean Kairo Crispim" class="team-photo">
                     <div class="team-info">
                         <h3>Jean Kairo Crispim</h3>
-                        <div class="team-role">CTO & Co-fundador</div>
-                        <a href="https://www.linkedin.com/in/jean-kairo-crispim-a11312284/" target="_blank" class="linkedin-link">🔗 LinkedIn</a>
+                        <div class="team-role">CTO e cofundador</div>
+                        <a href="https://www.linkedin.com/in/jean-kairo-crispim-a11312284/" target="_blank" rel="noopener" class="linkedin-link">LinkedIn</a>
                     </div>
                 </div>
-                <p class="team-bio">Engenheiro de Telecomunicações em formação pelo Instituto Militar de Engenharia (IME) com intercâmbio acadêmico na USMA (West Point). Especialista em IA aplicada, desenvolvimento web, redes de computadores e cibersegurança.</p>
+                <p class="team-bio">Graduando em Engenharia de Telecomunica&ccedil;&otilde;es pelo IME, com interc&acirc;mbio em Ci&ecirc;ncia da Computa&ccedil;&atilde;o e Ciberseguran&ccedil;a na United States Military Academy (West Point). Especialista em automa&ccedil;&atilde;o de redes, desenvolvimento full stack e agentes inteligentes.</p>
                 <div class="team-highlights">
-                    <h4>🎓 Formação & Experiência</h4>
+                    <h4>Experi&ecirc;ncias-chave</h4>
                     <ul>
-                        <li>Cybersecurity and Computer Science - West Point (EUA)</li>
-                        <li>Pesquisador CNPq - Redes Móveis Ad-Hoc</li>
-                        <li>Desenvolvedor Full-Stack na IME Júnior</li>
-                        <li>Coordenador do Batalhão de Computação</li>
+                        <li>Pesquisador CNPq em simula&ccedil;&otilde;es OMNeT++ para redes m&oacute;veis ad hoc em cen&aacute;rios de emerg&ecirc;ncia.</li>
+                        <li>Coordenador de computa&ccedil;&atilde;o na IME J&uacute;nior liderando squads e projetos civis e militares.</li>
+                        <li>Desenvolvedor de produtos em React, React Native, Firebase e integra&ccedil;&otilde;es em nuvem.</li>
                     </ul>
                 </div>
                 <div class="team-highlights">
-                    <h4>💡 Especialidades</h4>
+                    <h4>Projetos recentes</h4>
                     <ul>
-                        <li>Agentes de IA e RAG</li>
-                        <li>Redes definidas por software (SD-WAN)</li>
-                        <li>Automação com Python e LangChain</li>
-                        <li>Desenvolvimento web (React, Firebase)</li>
-                        <li>Webscraping inteligente</li>
+                        <li>Agente de IA para RH com RAG e LangGraph, automatizando triagem 24/7.</li>
+                        <li>Automa&ccedil;&atilde;o de redes SD-WAN com Cisco vManage, Ansible e EVE-NG para data centers militares.</li>
+                        <li>Resposta a incidentes em VMware vSphere com firewall pfSense e scripts de monitoramento.</li>
                     </ul>
                 </div>
                 <div class="team-highlights">
-                    <h4>🏆 Conquistas & Certificações</h4>
+                    <h4>Certifica&ccedil;&otilde;es e idiomas</h4>
                     <ul>
-                        <li>Vencedor Hackathon IA 2025 (COPPE/UFRJ)</li>
-                        <li>Certificação CCNA 1 (Cisco)</li>
-                        <li>Introduction to BGP (APNIC)</li>
-                        <li>Agente de IA para RH com triagem inteligente</li>
-                        <li>Automação de redes SD-WAN</li>
+                        <li>CCNA 1, Introduction to BGP, Endpoint Security, TOEFL iBT.</li>
+                        <li>Portugu&ecirc;s nativo, ingl&ecirc;s avan&ccedil;ado e franc&ecirc;s intermedi&aacute;rio.</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="hackathon-badge">
-            <h3>🏆 Vencedores do 1º Hackathon de IA 2025</h3>
-            <p>Superamos mais de 50 equipes com a "Susy", uma assistente inteligente baseada em LLMs que acompanha pacientes desde o pré-operatório até o dia da cirurgia. Evento organizado pela Incubadora de Empresas COPPE/UFRJ em parceria com AWS e Visagio.</p>
+            <h3>Campe&otilde;es do Hackathon IA 2025</h3>
+            <p>Com a assistente inteligente Susy, automatizamos o cuidado cont&iacute;nuo de pacientes pr&eacute; e p&oacute;s-operat&oacute;rio, integrando LLMs, fluxos orquestrados e canais omnichannel. A solu&ccedil;&atilde;o superou 50 equipes no Hackathon da Incubadora COPPE/UFRJ em parceria com AWS e Visagio.</p>
         </div>
     </section>
 
     <section>
-        <h2>Nossa Missão</h2>
-        <p class="section-subtitle">Democratizar o acesso à tecnologia de ponta para PMEs brasileiras</p>
+        <h2>Nossa miss&atilde;o</h2>
+        <p class="section-subtitle">Democratizar recursos de intelig&ecirc;ncia artificial e automa&ccedil;&atilde;o para PMEs, mantendo foco em resultados mensur&aacute;veis e opera&ccedil;&atilde;o simples.</p>
         <div class="mission-grid">
             <div class="mission-card">
-                <div class="mission-icon">🎯</div>
-                <h3>Visão</h3>
-                <p>Ser referência em transformação digital para PMEs até 2027, impactando +500 empresas</p>
+                <div class="mission-icon">&#128161;</div>
+                <h3>Vis&atilde;o</h3>
+                <p>Ser refer&ecirc;ncia em transforma&ccedil;&atilde;o digital para pequenas e m&eacute;dias empresas at&eacute; 2027, impactando mais de 500 opera&ccedil;&otilde;es no Brasil.</p>
             </div>
             <div class="mission-card">
-                <div class="mission-icon">💡</div>
-                <h3>Missão</h3>
-                <p>Automatizar processos críticos com IA, liberando empreendedores para focar em estratégia</p>
+                <div class="mission-icon">&#128200;</div>
+                <h3>Miss&atilde;o</h3>
+                <p>Mapear gargalos, desenhar fluxos inteligentes e implementar agentes que combinam pessoas, dados e automa&ccedil;&otilde;es de ponta a ponta.</p>
             </div>
             <div class="mission-card">
-                <div class="mission-icon">❤️</div>
+                <div class="mission-icon">&#128273;</div>
                 <h3>Valores</h3>
-                <p>Excelência técnica, personalização, transparência e impacto real no negócio do cliente</p>
+                <p>Transpar&ecirc;ncia, proximidade com o cliente, tecnologia acess&iacute;vel e impacto real medido em efici&ecirc;ncia, receita e experi&ecirc;ncia.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <div class="footer-logo">VERTECH</div>
-            <p style="opacity: 0.9; margin-bottom: 30px;">Onde estratégia encontra automação</p>
+        <div style="max-width:1200px;margin:0 auto">
+            <div class="footer-logo">Vertech Consultoria</div>
+            <p style="opacity:.9;margin-bottom:30px">Onde estrat&eacute;gia encontra automa&ccedil;&atilde;o</p>
             <div class="footer-contact">
                 <a href="mailto:murilomn58@gmail.com">Email: murilomn58@gmail.com</a>
                 <a href="tel:+55499991051">Telefone: +55 (49) 99910-51</a>
@@ -192,12 +186,12 @@
             </div>
             <div class="footer-links">
                 <a href="index.html">Home</a>
-                <a href="solucoes.html">Soluções</a>
+                <a href="solucoes.html">Solu&ccedil;&otilde;es</a>
                 <a href="casos.html">Casos</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="contato.html">Contato</a>
             </div>
-            <div class="copyright">© 2025 Vertech Consultoria. Todos os direitos reservados.</div>
+            <div class="copyright">&copy; 2025 Vertech Consultoria. Todos os direitos reservados.</div>
         </div>
     </footer>
 </body>
