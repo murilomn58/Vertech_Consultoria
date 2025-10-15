@@ -1,4 +1,4 @@
-# VÉRTICE CONSULTORIA - SCRIPT DO PITCH
+﻿# Vertech Consultoria - SCRIPT DO PITCH
 ## Guia Completo Slide por Slide (5 minutos)
 
 ---
@@ -29,11 +29,11 @@
 
 ### Visual:
 - Triângulo azul
-- Logo "VÉRTICE" grande
+- Logo "Vertech" grande
 - Slogan: "Onde estratégia encontra automação"
 
 ### Script:
-"Bom dia, sou Murilo da Vértice Consultoria. Nos próximos 5 minutos vou mostrar como estamos transformando pequenas empresas através de inteligência artificial aplicada."
+"Bom dia, sou Murilo da Vertech Consultoria. Nos próximos 5 minutos vou mostrar como estamos transformando pequenas empresas através de inteligência artificial aplicada."
 
 **[PAUSA DE 2 SEGUNDOS - deixar a expectativa no ar]**
 
@@ -72,7 +72,7 @@
 
 **[Tom mais determinado]**
 
-"A Vértice existe para mudar isso."
+"A Vertech existe para mudar isso."
 
 ### Notas do Apresentador:
 - Contar como uma HISTÓRIA, não ler dados
@@ -96,7 +96,7 @@
 
 **[Gesticuar com as mãos mostrando "conectado"]**
 
-"A Vértice oferece integração COMPLETA. Analisamos a fundo como seu negócio funciona hoje e implementamos IA de forma personalizada em atendimento, vendas, financeiro e marketing."
+"A Vertech oferece integração COMPLETA. Analisamos a fundo como seu negócio funciona hoje e implementamos IA de forma personalizada em atendimento, vendas, financeiro e marketing."
 
 **[Pausa]**
 
@@ -364,7 +364,7 @@
 
 **[Pausa emocional]**
 
-"Queremos que em 2027, quando alguém perguntar 'como eu automatizo minha empresa?', a resposta imediata seja 'fala com a Vértice'."
+"Queremos que em 2027, quando alguém perguntar 'como eu automatizo minha empresa?', a resposta imediata seja 'fala com a Vertech'."
 
 **[Tom determinado]**
 
@@ -429,7 +429,7 @@
 ## 📊 SLIDE 12: CONTATO (10 segundos)
 
 ### Visual:
-- Logo Vértice novamente
+- Logo Vertech novamente
 - Emails e website
 - CTA final
 
@@ -438,7 +438,7 @@
 
 **[Sorriso genuíno]**
 
-"Estamos construindo algo especial na Vértice, e adoraríamos ter você nessa jornada."
+"Estamos construindo algo especial na Vertech, e adoraríamos ter você nessa jornada."
 
 **[Apontar para os contatos]**
 
@@ -531,7 +531,7 @@
 
 **Acreditem no que estão fazendo. Se vocês acreditam, eles também vão acreditar.**
 
-**BOA SORTE, VÉRTICE! 🎯💪**
+**BOA SORTE, Vertech! 🎯💪**
 
 ---
 
